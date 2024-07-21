@@ -450,36 +450,36 @@ body {
   text-align: end;
 }
 .main .main__wrapper {
-  padding-bottom: 245px;
-  padding-top: 245px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin: 245px 0;
+  display: block;
   min-height: 950px;
+  position: relative;
 }
 @media (max-width: 1199px) {
   .main .main__wrapper {
-    padding-bottom: 130px;
-    padding-top: 130px;
+    margin: 130px 0;
   }
 }
 @media (max-width: 768px) {
   .main .main__wrapper {
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding: 50px 0;
     min-height: auto;
+    margin: 0;
   }
 }
 .main .main__wrapper .main__img {
   max-width: 478px;
   width: 100%;
   min-height: 961px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
-@media (max-width: 1600px) {
+@media (max-width: 1199px) {
   .main .main__wrapper .main__img {
+    position: static;
+    display: block;
     margin: 0 auto;
   }
 }
@@ -489,7 +489,11 @@ body {
     max-width: 267px;
   }
 }
-@media (max-width: 1600px) {
+.main .main__wrapper .main__txt-wrap {
+  padding-top: 8px;
+  padding-right: 438px;
+}
+@media (max-width: 1199px) {
   .main .main__wrapper .main__txt-wrap {
     display: none;
   }
@@ -500,45 +504,72 @@ body {
   font-size: 40px;
 }
 .main .main__wrapper .main__txt:nth-child(1) {
-  margin-bottom: 158px;
-  margin-top: 285px;
+  margin: 278px 0 158px;
+  width: 105%;
 }
 .main .main__wrapper .main__txt:nth-child(2) {
   margin-bottom: 265px;
 }
 .main .main__wrapper .main__txt:nth-child(2)::before {
-  width: 1133px;
+  width: 100%;
 }
 .main .main__wrapper .main__txt:nth-child(3)::before {
-  width: 1133px;
+  width: 100%;
 }
 .main .main__wrapper .main__txt::before {
   position: absolute;
   content: "";
   top: -20px;
   left: 0;
-  width: 1185px;
+  width: 100%;
   height: 3px;
   background-color: #2D29FF;
 }
-.main .main__wrapper .main__txt::before:nth-child(2) {
-  width: 1133px;
-}
-.main .main__wrapper .main__txt2::before {
-  width: 1133px;
-}
 .main .main__wrapper .main__txt2:first-child {
-  margin-bottom: 310px;
-  margin-top: 218px;
+  margin: 209px 0 313px;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .main .main__wrapper .main__txt2:first-child {
-    margin-bottom: 177px;
-    margin-top: 79px;
+    margin: 72px 0 177px;
   }
 }
-.main .main__wrapper .main__txt2:last-child {
-  margin-bottom: 0;
+.main .main__wrapper2 {
+  position: relative;
+}
+.main .main__wrapper2 .main__txt-wrap:nth-child(1) {
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .main .main__wrapper2 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .main .main__wrapper2 {
+    min-height: 539px;
+    display: block;
+    margin-top: 70px;
+    margin-bottom: 0;
+    padding-bottom: 1px;
+  }
+  .main .main__wrapper2 .main__txt-wrap {
+    padding-right: 144px;
+    display: block;
+  }
+  .main .main__wrapper2 .main__img2 {
+    position: absolute;
+    top: 0;
+    right: -100px;
+    z-index: -1;
+  }
+  .main .main__wrapper2 .main__txt2 {
+    width: 100%;
+    font-size: 16px;
+  }
+  .main .main__wrapper2 .main__txt2:nth-child(1)::before, .main .main__wrapper2 .main__txt2:last-child::before {
+    width: 100%;
+  }
 }
 .main .main__banner {
   padding-top: 212px;
@@ -565,44 +596,6 @@ body {
 @media (max-width: 768px) {
   .main .main__banner img:first-child {
     padding-bottom: 16px;
-  }
-}
-.main .main__wrapper2 {
-  position: relative;
-  min-height: 539px;
-}
-@media (max-width: 1199px) {
-  .main .main__wrapper2 {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .main .main__wrapper2 {
-    display: block;
-    margin-top: 70px;
-    margin-bottom: 70px;
-  }
-  .main .main__wrapper2 .main__txt-wrap {
-    padding-right: 144px;
-  }
-  .main .main__wrapper2 .main__txt-wrap {
-    display: block;
-  }
-  .main .main__wrapper2 .main__img2 {
-    position: absolute;
-    top: 0;
-    right: -100px;
-    z-index: -1;
-  }
-  .main .main__wrapper2 .main__txt2 {
-    width: 100%;
-    font-size: 16px;
-  }
-  .main .main__wrapper2 .main__txt2:first-child::before {
-    width: 100%;
-  }
-  .main .main__wrapper2 .main__txt2:last-child::before {
-    width: 100%;
   }
 }
 
