@@ -525,6 +525,11 @@ body {
   height: 3px;
   background-color: #2D29FF;
 }
+@media (max-width: 768px) {
+  .main .main__wrapper .main__txt::before {
+    height: 2px;
+  }
+}
 .main .main__wrapper .main__txt2:first-child {
   margin: 209px 0 313px;
   width: 100%;
