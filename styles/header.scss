@@ -1,0 +1,62 @@
+.header {
+  padding: 42px 0;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(0.25turn, $blue, $white);
+  border-image-slice: 1;
+  width: 100%;
+
+  @include lg {
+    & {
+      padding: 20px 0;
+    }
+  }
+
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo-img {
+      @include sm {
+        & {
+          height: 49px;
+        }
+      }
+    }
+
+    .header__btns {
+      display: flex;
+      gap: 34px;
+
+      @include sm {
+        & {
+          gap: 15px;
+        }
+      }
+
+      .header__btn {
+        background-color: $blue;
+        padding: 20px 50px;
+        font-size: 24px;
+        border-radius: 20px;
+        color: white;
+        font-weight: 300;
+        transition: all 0.3s;
+
+        &:hover {
+          background-color: $blue-light;
+
+        }
+
+        @include sm {
+          & {
+            line-height: 14px;
+            font-size: 12px;
+            padding: 9px 17px;
+            border-radius: 12px;
+          }
+        }
+      }
+    }
+  }
+}

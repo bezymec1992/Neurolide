@@ -1,0 +1,44 @@
+body {
+  background-color: $dark;
+}
+
+.container {
+  max-width: 1614px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include s {
+    & {
+      padding: 0 10px;
+    }
+  }
+}
+
+.desk-hide {
+  @include lg {
+    & {
+      display: none;
+    }
+  }
+
+  @include sm {
+    & {
+      display: block;
+    }
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 200% center;
+  }
+
+  50% {
+    background-position: 300% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}

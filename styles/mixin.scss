@@ -1,0 +1,50 @@
+//vars
+$blue: #2D29FF;
+$blue-dark: #0149B4;
+$white: #fff;
+$dark: #141417;
+$blue-light: #0a06ef;
+$bg-card: #0c1017;
+
+
+//mixins
+@mixin sm {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin s {
+  @media (max-width: 340px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
+
+
+// Fonts
+@font-face {
+  font-family: DMSans-Bold;
+  src: url('../fonts/DMSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: DMSans-Regular;
+  src: url('../fonts/DMSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: PublicSans-Regular;
+  src: url('../fonts/PublicSans.ttf');
+}
