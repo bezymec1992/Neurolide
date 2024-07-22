@@ -579,6 +579,13 @@ body {
 .main .main__banner {
   padding-top: 212px;
   padding-bottom: 338px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media (max-width: 768px) {
   .main .main__banner {
@@ -592,14 +599,11 @@ body {
     padding-bottom: 65px;
   }
 }
-.main .main__banner img {
-  border-radius: 35px;
-}
-.main .main__banner img:first-child {
+.main .main__banner .main__banner-img:first-child {
   padding-bottom: 68px;
 }
 @media (max-width: 768px) {
-  .main .main__banner img:first-child {
+  .main .main__banner .main__banner-img:first-child {
     padding-bottom: 16px;
   }
 }
