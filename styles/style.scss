@@ -503,8 +503,8 @@
         min-height: auto;
       }
 
-      @include s {
-        border-radius: 20px;
+      @include sm {
+        border-radius: 0;
       }
     }
   }

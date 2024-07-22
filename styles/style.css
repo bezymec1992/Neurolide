@@ -915,8 +915,8 @@ body {
     min-height: auto;
   }
 }
-@media (max-width: 340px) {
+@media (max-width: 768px) {
   .info .info__item .info__img img {
-    border-radius: 20px;
+    border-radius: 0;
   }
 }
