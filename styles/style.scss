@@ -145,11 +145,11 @@
 
     .main__txt2 {
       &:first-child {
-        margin: 209px 0 313px;
+        margin: 204px 0 321px;
         width: 100%;
 
         @include sm {
-          margin: 72px 0 177px;
+          margin: 69px 0 186px;
         }
       }
     }
@@ -492,7 +492,7 @@
       }
     }
 
-    .info__img {
+    .info__img img {
       border-radius: 50px;
       min-height: 500px;
       max-width: 500px;
@@ -501,6 +501,10 @@
       @include lg {
         max-width: 100%;
         min-height: auto;
+      }
+
+      @include s {
+        border-radius: 20px;
       }
     }
   }
